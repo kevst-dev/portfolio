@@ -1,0 +1,92 @@
+
+/* ---- ---- Google Font ---- ---- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* ---- ---- Variables ---- ---- */
+:root {
+  --header-height: 66px;
+}
+
+/* ---- ---- Colores ---- ---- */
+:root{
+  --color-fondo:   #303642;
+  --color-complemento:   #3D4254;
+  --color-primario:   #FFC969;
+  --color-secundario:   #F95F29;
+  --color-texto-1:   #FFFFFF;
+  --color-texto-2:   #E1E1E1;
+}
+
+/* ---- ---- Fuente y tipografia ---- ---- */
+:root{
+  --body-font: 'Poppins', sans-serif;
+
+  --font-size-heading-1: 48px;
+  --font-size-heading-2: 36px;
+  --font-size-heading-3: 32px;
+  --font-size-heading-4: 24px;
+  --font-size-body-text: 18px;
+  --font-size-small: 16px;
+  --font-size-min: 14px;
+}
+
+@media screen and (min-width: 968px){
+  :root{
+  }
+}
+
+/* ---- ---- Margenes ---- ---- */
+:root{
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+
+/* ---- ---- Z-index ---- ---- */
+:root{
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* ---- ---- Base ---- ---- */
+*,::before, ::after {
+  box-sizing: border-box;;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+
+  font-family: var(--body-font);
+  font-size: var(--font-size-small);
+
+  color: var(--color-texto-1);
+  background-color: var(--color-fondo);
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
