@@ -1,14 +1,14 @@
 <template>
   <header class="header-main">
-    <a class="header-main__logo">
+    <a class="header-main__logo" href="#home">
       &lt<span>Kevst</span>.dev/&gt
     </a>
-    <div>navbar</div>
+    <NavbarDesktop/>
   </header>
 </template>
 
 <script setup>
-
+  import NavbarDesktop from './nav-desktop.vue'
 </script>
 
 <style scoped>
@@ -27,8 +27,15 @@
   .header-main__logo {
     font-weight: 700;
     color: var(--color-primario);
+
+    cursor: pointer;
   }
   .header-main__logo span {
     color: var(--color-texto-1);
+  }
+
+  /* desktop min */
+  @media screen and (max-width: 1024px){
+    .header-main { padding: 0 45px; }
   }
 </style>

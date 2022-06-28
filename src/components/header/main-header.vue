@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-  import HeaderDesktop from './header-desktop.vue'
+  import HeaderDesktop from './desktop/header-desktop.vue'
 </script>
 
 <style scoped>
