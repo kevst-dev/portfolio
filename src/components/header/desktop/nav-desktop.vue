@@ -10,50 +10,54 @@
 </template>
 
 <script>
-  import NavItem from '../nav-item.vue'
+import { reactive } from 'vue'
+import NavItem from '../nav-item.vue'
 
-  let dataNav = [
-    {
-      key: "home",
-      title: "Principal",
-      isActive: true
-    },
-    {
-      key: "about",
-      title: "Sobre mi",
-      isActive: false
-    },
-    {
-      key: "skills",
-      title: "Habilidades",
-      isActive: false
-    },
-    {
-      key: "work",
-      title: "Portafolio",
-      isActive: false
-    },
-    {
-      key: "contact",
-      title: "Contacto",
-      isActive: false
-    }
-  ]
-
-  export default {
-    components: {
-      NavItem
-    },
-    data: () => ({
-      dataNav
-    }),
-    methods: {
-      selectActiveItem(selectItem, dataNav) {
-        dataNav.forEach(item => { item.isActive = false });
-        selectItem.isActive = !selectItem.isActive
+export default {
+  components: {
+    NavItem
+  },
+  setup() {
+    const dataNav = reactive([
+      {
+        key: "home",
+        title: "Principal",
+        isActive: true
+      },
+      {
+        key: "about",
+        title: "Sobre mi",
+        isActive: false
+      },
+      {
+        key: "skills",
+        title: "Habilidades",
+        isActive: false
+      },
+      {
+        key: "work",
+        title: "Portafolio",
+        isActive: false
+      },
+      {
+        key: "contact",
+        title: "Contacto",
+        isActive: false
       }
-    },
-  };
+    ])
+
+    const selectActiveItem = (selectItem) => {
+      dataNav.forEach(item => { item.isActive = false });
+      selectItem.isActive = !selectItem.isActive
+      console.log(dataNav)
+    }
+
+    return {
+      dataNav,
+      selectActiveItem
+    }
+  }
+}
 </script>
 
 <style scoped>
