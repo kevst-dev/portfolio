@@ -3,13 +3,38 @@
     <a class="header-main__logo" href="#home">
       &lt<span>Kevst</span>.dev/&gt
     </a>
-    <div class="header__toggle-nav">
+    <div
+      class="header__toggle-nav"
+      v-on:click="toggleNav()"
+     >
       <font-awesome-icon icon="fa-solid fa-bars" size="lg" />
     </div>
+    <NavMobile
+      :isShowNav="isShowNav"
+      @toggle-nav="toggleNav()"
+    />
   </header>
 </template>
 
 <script>
+import { ref } from 'vue'
+import NavMobile from './nav-mobile.vue'
+
+export default {
+  components: {
+    NavMobile
+  },
+  setup() {
+    const isShowNav= ref(false)
+
+    const toggleNav = () => { isShowNav.value = !isShowNav.value }
+
+    return {
+      isShowNav,
+      toggleNav
+    }
+  }
+}
 </script>
 
 <style scoped>
