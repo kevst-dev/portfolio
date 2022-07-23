@@ -13,6 +13,10 @@ import NavbarDesktop from './nav-desktop.vue'
 
 <style scoped>
   .header-main {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: var(--header-height);
     padding: 0 95px;
 

@@ -37,8 +37,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
   .header-main {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: var(--header-height);
     padding: 0 20px;
 

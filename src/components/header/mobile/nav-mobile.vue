@@ -70,6 +70,7 @@ export default {
 <style scoped>
   .nav-header {
     position: fixed;
+    z-index: var(--z-fixed);
     right: -100%;
     top: var(--header-height);
 
