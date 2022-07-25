@@ -22,7 +22,7 @@
 <style scoped>
   .container-home {
     width: 100%;
-    height: calc(90vh - var(--header-height));
+    height: 85vh;
 
     display: flex;
     flex-direction: row;
