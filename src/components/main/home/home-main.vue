@@ -1,8 +1,8 @@
 <template>
-  <div class="container-home">
+  <section class="container-home" id="home">
     <ProfileData/>
     <ProfilePhoto/>
-  </div>
+  </section>
 </template>
 
 <script>

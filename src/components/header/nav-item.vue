@@ -1,5 +1,5 @@
 <template>
-  <li class="nav__item" :id="dataItem.key">
+  <li class="nav__item" >
     <a
       class="nav__link"
       :class="{link__active: dataItem.isActive}"

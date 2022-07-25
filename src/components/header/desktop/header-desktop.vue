@@ -1,14 +1,13 @@
 <template>
   <header class="header-main">
-    <a class="header-main__logo" href="#home">
-      &lt<span>Kevst</span>.dev/&gt
-    </a>
+    <LogoKevst/>
     <NavbarDesktop/>
   </header>
 </template>
 
 <script setup>
-import NavbarDesktop from './nav-desktop.vue'
+  import LogoKevst from '../logo-kevst.vue'
+  import NavbarDesktop from './nav-desktop.vue'
 </script>
 
 <style scoped>
@@ -26,16 +25,6 @@ import NavbarDesktop from './nav-desktop.vue'
     align-items: center;
 
     background-color: var(--color-complemento);
-  }
-
-  .header-main__logo {
-    font-weight: 700;
-    color: var(--color-primario);
-
-    cursor: pointer;
-  }
-  .header-main__logo span {
-    color: var(--color-texto-1);
   }
 
   /* desktop min */

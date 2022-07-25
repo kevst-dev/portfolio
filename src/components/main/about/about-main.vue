@@ -1,5 +1,5 @@
 <template>
-  <div class="container-about">
+  <section class="container-about" id="about">
     <StandardTitle nameTitle="sobre mi"/>
     <div class="information">
       <img
@@ -30,7 +30,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -56,6 +56,7 @@
   }
 
   .information {
+    margin-top: 60px;
     width: 100%;
 
     display: flex;
