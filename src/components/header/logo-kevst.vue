@@ -1,5 +1,5 @@
 <template>
-    <a class="logo-kevst" href="#home">
+    <a class="logo-kevst" href="#">
       &lt<span>Kevst</span>.dev/&gt
     </a>
 </template>

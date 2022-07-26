@@ -13,8 +13,9 @@
 </template>
 
 <script>
-import { reactive, defineComponent } from 'vue'
+import { reactive } from 'vue'
 import NavItem from '../nav-item.vue'
+import { featuresNavItems } from '../features-nav-items.js'
 
 export default {
   components: {
@@ -24,34 +25,8 @@ export default {
     isShowNav: Boolean
   },
   emits: ['toggle-nav'],
-  setup(props, context) {
-    const dataNav = reactive([
-      {
-        key: "home",
-        title: "Principal",
-        isActive: true
-      },
-      {
-        key: "about",
-        title: "Sobre mi",
-        isActive: false
-      },
-      {
-        key: "skills",
-        title: "Habilidades",
-        isActive: false
-      },
-      {
-        key: "work",
-        title: "Portafolio",
-        isActive: false
-      },
-      {
-        key: "contact",
-        title: "Contacto",
-        isActive: false
-      }
-    ])
+  setup(context) {
+    const dataNav = reactive(featuresNavItems)
 
     const selectActiveItem = (selectItem) => {
       dataNav.forEach(item => { item.isActive = false });

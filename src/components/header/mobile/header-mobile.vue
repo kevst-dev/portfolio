@@ -1,8 +1,6 @@
 <template>
   <header class="header-main">
-    <a class="header-main__logo" href="#home">
-      &lt<span>Kevst</span>.dev/&gt
-    </a>
+    <logo-kevst/>
     <div
       class="header__toggle-nav"
       v-on:click="toggleNav()"
@@ -17,11 +15,13 @@
 </template>
 
 <script>
-import { ref } from 'vue'
-import NavMobile from './nav-mobile.vue'
+  import { ref } from 'vue'
+  import LogoKevst from '../logo-kevst.vue'
+  import NavMobile from './nav-mobile.vue'
 
 export default {
   components: {
+    LogoKevst,
     NavMobile
   },
   setup() {
@@ -52,15 +52,5 @@ export default {
     align-items: center;
 
     background-color: var(--color-complemento);
-  }
-
-  .header-main__logo {
-    font-weight: 700;
-    color: var(--color-primario);
-
-    cursor: pointer;
-  }
-  .header-main__logo span {
-    color: var(--color-texto-1);
   }
 </style>

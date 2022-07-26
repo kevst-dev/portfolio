@@ -2,54 +2,28 @@
   <nav class="nav-header">
     <ul class="nav-header__menu">
       <NavItem v-for="item in dataNav"
-        v-on:click="selectActiveItem(item, dataNav)"
+        v-on:click="selectActiveItem(item)"
         :dataItem="item"
       />
     </ul>
   </nav>
-</template>
+</template >
 
 <script>
 import { reactive } from 'vue'
 import NavItem from '../nav-item.vue'
+import { featuresNavItems } from '../features-nav-items.js'
 
 export default {
   components: {
     NavItem
   },
   setup() {
-    const dataNav = reactive([
-      {
-        key: "home",
-        title: "Principal",
-        isActive: true
-      },
-      {
-        key: "about",
-        title: "Sobre mi",
-        isActive: false
-      },
-      {
-        key: "skills",
-        title: "Habilidades",
-        isActive: false
-      },
-      {
-        key: "work",
-        title: "Portafolio",
-        isActive: false
-      },
-      {
-        key: "contact",
-        title: "Contacto",
-        isActive: false
-      }
-    ])
+    const dataNav = reactive(featuresNavItems)
 
     const selectActiveItem = (selectItem) => {
       dataNav.forEach(item => { item.isActive = false });
       selectItem.isActive = !selectItem.isActive
-      console.log(dataNav)
     }
 
     return {

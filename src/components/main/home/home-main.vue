@@ -15,6 +15,9 @@
       ProfileData
     },
     setup() {
+
+      return {
+      }
     }
   }
 </script>

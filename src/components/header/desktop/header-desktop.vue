@@ -1,5 +1,5 @@
 <template>
-  <header class="header-main">
+  <header class="header-container">
     <LogoKevst/>
     <NavbarDesktop/>
   </header>
@@ -11,7 +11,7 @@
 </script>
 
 <style scoped>
-  .header-main {
+  .header-container {
     width: 100vw;
     position: fixed;
     top: 0;
@@ -29,6 +29,6 @@
 
   /* desktop min */
   @media screen and (max-width: 1024px){
-    .header-main { padding: 0 45px; }
+    .header-container { padding: 0 45px; }
   }
 </style>

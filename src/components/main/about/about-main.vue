@@ -41,6 +41,9 @@
       StandardTitle
     },
     setup() {
+
+      return {
+      }
     }
   }
 </script>

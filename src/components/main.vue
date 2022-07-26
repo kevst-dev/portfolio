@@ -8,14 +8,19 @@
 <script>
   import SectionHome from './main/home/home-main.vue'
   import SectionAbout from './main/about/about-main.vue'
-
+  import { scrollEvent } from './main/actions-scroll.js'
   export default {
-    props: {
-      nameTitle: "",
+    created() {
+      window.addEventListener('scroll', scrollEvent);
     },
     components: {
       SectionHome,
       SectionAbout
+    },
+    setup() {
+
+      return {
+      }
     }
   }
 </script>
