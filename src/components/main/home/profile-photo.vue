@@ -1,9 +1,9 @@
 <template>
-  <figure class="container__mask">
+  <figure class="container-mask">
     <img
       :src="urlAssets + '/foto-perfil.png'"
       alt="Foto de perfil"
-      class="mask__photo"
+      class="mask-photo"
     >
   </figure>
 </template>
@@ -23,7 +23,7 @@
 </script>
 
 <style scoped>
-  .container__mask {
+  .container-mask {
     width: 438px;
     height: 436px;
     background-color: var(--color-primario);
@@ -36,7 +36,7 @@
 
   /* mobile */
   @media screen and (max-width: 520px){
-    .container__mask {
+    .container-mask {
       width: 330px;
       height: 340px;
       -webkit-mask-image: url(../../../assets/home/blob-para-foto-mobile.svg.svg);
@@ -44,7 +44,7 @@
       mask-image: url(../../../assets/home/blob-para-foto-mobile.svg);
       mask-repeat: no-repeat;
     }
-    .mask__photo {
+    .mask-photo {
       padding-top: 15px;
     }
   }
