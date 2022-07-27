@@ -1,11 +1,6 @@
 <template>
   <div class="container-data">
-    <div class="title">
-      <p class="data-welcome">¡Hola!</p>
-      <h1 class="data-title">
-        Yo soy <span>Kevin</span> <div>Front-End Developer.</div>
-      </h1>
-    </div>
+    <Title/>
 
     <p class="data-paragraph">
       Desarrollador WEB apasionado por la informática
@@ -43,9 +38,12 @@
 </template>
 
 <script>
+  import Title from './title.vue'
+undefined
   export default {
     components: {
-    }
+    Title
+}
   }
 </script>
 
@@ -57,21 +55,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  .data-welcome {
-    color: var(--color-texto-2);
-    font-size: var(--font-size-heading-4);
-    font-weight: 500;
-  }
-
-  .data-title {
-    color: var(--color-texto-1);
-    font-size: var(--font-size-heading-1);
-    font-weight: 700;
-  }
-  .data-title span {
-    color: var(--color-primario);
   }
 
   .data-paragraph {
@@ -156,9 +139,6 @@
 
   /* Desktop-min */
   @media screen and (max-width: 1256px){
-    .data-title div {
-      font-size: var(--font-size-heading-2);
-    }
     .data-button {
       font-size: var(--font-size-small);
       font-weight: 600;
@@ -177,16 +157,8 @@
       align-items: center;
       gap: 35px;
     }
-    .title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .title div {
-      font-size: var(--font-size-heading-1);
-    }
 
-    .data-title, .data-paragraph {
+    .data-paragraph {
       text-align: center;
     }
   }

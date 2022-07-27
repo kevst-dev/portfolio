@@ -7,7 +7,7 @@
 
 <script>
   import ProfilePhoto from './profile-photo.vue'
-  import ProfileData from './profile-data.vue'
+  import ProfileData from './profile-information/profile-main.vue'
 
   export default {
     components: {
