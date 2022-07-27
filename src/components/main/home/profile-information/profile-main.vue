@@ -7,21 +7,7 @@
       y el software libre, enfocado en nunca parar de aprender.
     </p>
 
-    <div class="social-networks">
-      <p class="social-title">Sígueme:</p>
-
-      <div class="social-links">
-        <a class="social-link" href="#">
-          <font-awesome-icon icon="fa-brands fa-linkedin-in" size="lg" />
-        </a>
-        <a class="social-link" href="#">
-          <font-awesome-icon icon="fa-brands fa-github" size="lg" />
-        </a>
-        <a class="social-link" href="#">
-          <font-awesome-icon icon="fa-brands fa-codepen" size="lg" />
-        </a>
-      </div>
-    </div>
+    <SocialNetworks/>
 
     <div class="data-buttons">
       <a class="data-button" href="#">
@@ -39,11 +25,13 @@
 
 <script>
   import Title from './title.vue'
-undefined
+  import SocialNetworks from './social-networks/social-main.vue'
+
   export default {
     components: {
-    Title
-}
+      Title,
+      SocialNetworks
+    }
   }
 </script>
 
@@ -61,34 +49,6 @@ undefined
     color: var(--color-texto-1);
     font-size: var(--font-size-body-text);
     font-weight: 400;
-  }
-
-  .social-networks {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  .social-title {
-    color: var(--color-texto-1);
-    font-size: var(--font-size-body-text);
-    font-weight: 400;
-  }
-
-  .social-links {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .social-link {
-    color: var(--color-texto-2);
-    transition: 0.4s;
-  }
-  .social-link:hover {
-    color: var(--color-secundario);
-    transform: scale(1.4);
   }
 
   .data-buttons {
