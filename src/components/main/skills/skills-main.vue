@@ -9,6 +9,7 @@
         <Paragraph/>
       </div>
 
+      <Skills/>
     </div>
   </section>
 </template>
@@ -17,12 +18,14 @@
   import StandardTitle from '../standard/title.vue'
   import StandardSubTitle from '../standard/sub-title.vue'
   import Paragraph from './paragraph.vue'
+  import Skills from './technologies/container.vue'
 
   export default {
     components: {
       StandardTitle,
       StandardSubTitle,
-      Paragraph
+      Paragraph,
+      Skills
     },
     setup() {
       return {
@@ -45,10 +48,10 @@
     width: 100%;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 130px;
+    gap: 30px;
   }
 
   .description {
@@ -60,7 +63,6 @@
   /* Tablet */
   @media screen and (max-width: 768px){
     .information {
-      flex-direction: column;
     }
   }
   /* Mobile */
