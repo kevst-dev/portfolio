@@ -28,6 +28,7 @@
 
 <style scoped>
   .button-normal {
+    width: fit-content;
     cursor: pointer;
     padding: 18px 32px;
     border-radius: 10px;
@@ -95,7 +96,6 @@
   /* Mobile */
   @media screen and (max-width: 420px){
     .button-normal, .button-outline, .button-text {
-      width: 100%;
       font-size: var(--font-size-min);
     }
   }
