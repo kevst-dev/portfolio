@@ -3,6 +3,7 @@
     <SectionHome/>
     <SectionAbout/>
     <SectionSkills/>
+    <SectionWork/>
   </main>
 </template>
 
@@ -10,6 +11,7 @@
   import SectionHome from './main/home/home-main.vue'
   import SectionAbout from './main/about/about-main.vue'
   import SectionSkills from './main/skills/skills-main.vue'
+  import SectionWork from './main/work/work-main.vue'
 
   import { scrollEvent } from './main/actions-scroll.js'
   export default {
@@ -19,7 +21,8 @@
     components: {
       SectionHome,
       SectionAbout,
-      SectionSkills
+      SectionSkills,
+      SectionWork
     },
     setup() {
 
