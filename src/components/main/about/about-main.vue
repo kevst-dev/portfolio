@@ -6,7 +6,8 @@
       <ProfilePhoto/>
 
       <div class="description">
-        <h3 class="sub-title">Quien soy</h3>
+        <StandardSubTitle nameTitle="Quien soy"/>
+
         <div class="paragraph">
           <hr class="line">
           <p class="text">
@@ -34,11 +35,13 @@
 <script>
   import StandardTitle from '../standard/title.vue'
   import ProfilePhoto from './profile-photo.vue'
+  import StandardSubTitle from '../standard/sub-title.vue'
 
   export default {
     components: {
       StandardTitle,
-      ProfilePhoto
+      ProfilePhoto,
+      StandardSubTitle
     },
     setup() {
 
@@ -72,12 +75,6 @@
     display: flex;
     flex-direction: column;
     gap: 35px;
-  }
-
-  .sub-title {
-    margin: 0;
-    font-size: var(--font-size-heading-3);
-    font-weight: 600;
   }
 
   .paragraph {
