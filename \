@@ -1,31 +1,12 @@
 <template>
-  <section class="container-about" id="about">
-    <StandardTitle nameTitle="Sobre mi"/>
+  <section class="container-skills" id="skills">
+    <StandardTitle nameTitle="sobre mi"/>
 
-    <div class="information">
-      <ProfilePhoto/>
-
-      <div class="description">
-        <StandardSubTitle nameTitle="Quien soy"/>
-
-        <Paragraph />
-
-        <StandardButton
-          name="Mi portafolio"
-          styleButton="button-normal"
-          urlIcon="fa-solid fa-cubes-stacked"
-        />
-      </div>
-    </div>
   </section>
 </template>
 
 <script>
   import StandardTitle from '../standard/title.vue'
-  import ProfilePhoto from './profile-photo.vue'
-  import StandardSubTitle from '../standard/sub-title.vue'
-  import Paragraph from './paragraph.vue'
-  import StandardButton from '../standard/button.vue'
 
   export default {
     components: {

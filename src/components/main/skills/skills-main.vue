@@ -1,42 +1,30 @@
 <template>
-  <section class="container-about" id="about">
-    <StandardTitle nameTitle="Sobre mi"/>
+  <section class="container-skills" id="skills">
+    <StandardTitle nameTitle="Habilidades"/>
 
     <div class="information">
-      <ProfilePhoto/>
 
       <div class="description">
-        <StandardSubTitle nameTitle="Quien soy"/>
-
-        <Paragraph />
-
-        <StandardButton
-          name="Mi portafolio"
-          styleButton="button-normal"
-          urlIcon="fa-solid fa-cubes-stacked"
-        />
+        <StandardSubTitle nameTitle="Que hago"/>
+        <Paragraph/>
       </div>
+
     </div>
   </section>
 </template>
 
 <script>
   import StandardTitle from '../standard/title.vue'
-  import ProfilePhoto from './profile-photo.vue'
   import StandardSubTitle from '../standard/sub-title.vue'
   import Paragraph from './paragraph.vue'
-  import StandardButton from '../standard/button.vue'
 
   export default {
     components: {
       StandardTitle,
-      ProfilePhoto,
       StandardSubTitle,
-      Paragraph,
-      StandardButton
+      Paragraph
     },
     setup() {
-
       return {
       }
     }
@@ -44,7 +32,7 @@
 </script>
 
 <style scoped>
-  .container-about {
+  .container-skills {
     width: 100%;
 
     display: flex;
@@ -71,7 +59,6 @@
 
   /* Tablet */
   @media screen and (max-width: 768px){
-
     .information {
       flex-direction: column;
     }
