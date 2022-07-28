@@ -40,4 +40,11 @@
     border: 1px solid var(--color-primario);
     background-color: var(--color-primario);
   }
+
+  /* Mobile */
+  @media screen and (max-width: 420px){
+    .title {
+      font-size: var(--font-size-heading-3);
+    }
+  }
 </style>

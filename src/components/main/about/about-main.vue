@@ -1,12 +1,10 @@
 <template>
   <section class="container-about" id="about">
     <StandardTitle nameTitle="sobre mi"/>
+
     <div class="information">
-      <img
-        src="../../../assets/about/foto-perfil.webp"
-        alt="Foto de perfil"
-        class="photo"
-      >
+      <ProfilePhoto/>
+
       <div class="description">
         <h3 class="sub-title">Quien soy</h3>
         <div class="paragraph">
@@ -18,10 +16,10 @@
 
             Siempre he sido una persona muy interesada por la informática,
             pero, inicie mis estudios sobre desarrollo con mayor compromiso,
-            al inicio del año <span>2018</span>. Desde entonces me he sumergido en un rápido
-            avance para crecer como profesional, proponiéndome retos, que me
-            ayudan a mejorar como desarrollador. Puedes ver mi trabajo
-            en la sección de Proyectos.
+            al inicio del año <span>2018</span>. Desde entonces me he sumergido
+            en un rápido avance para crecer como profesional, proponiéndome
+            retos, que me ayudan a mejorar como desarrollador. Puedes ver mi
+            trabajo en la sección de Proyectos.
           </p>
         </div>
         <a class="button-show-portfolio" href="#">
@@ -35,10 +33,12 @@
 
 <script>
   import StandardTitle from '../standard/title.vue'
+  import ProfilePhoto from './profile-photo.vue'
 
   export default {
     components: {
-      StandardTitle
+      StandardTitle,
+      ProfilePhoto
     },
     setup() {
 
@@ -52,7 +52,6 @@
   .container-about {
     width: 100%;
 
-    margin: 55px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,16 +66,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 130px;
-  }
-
-  .photo {
-    padding-top: 50px;
-    width: 386px;
-    height: 506px;
-    object-fit: cover;
-
-    background-color: var(--color-primario);
-    border-radius: 30px;
   }
 
   .description {
@@ -138,6 +127,10 @@
   }
   /* Tablet */
   @media screen and (max-width: 768px){
+
+    .information {
+      flex-direction: column;
+    }
   }
   /* Mobile */
   @media screen and (max-width: 420px){
