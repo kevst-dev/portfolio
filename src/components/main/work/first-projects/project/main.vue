@@ -1,17 +1,17 @@
 <template>
   <div class="container-projects">
-    <Project/>
+    <PhotoProject/>
   </div>
 </template>
 
 <script>
-  import Project from './project/main.vue'
+  import PhotoProject from './photo-project.vue'
 
   export default {
     created() {
     },
     components: {
-      Project
+      PhotoProject
     },
     setup() {
       return {
