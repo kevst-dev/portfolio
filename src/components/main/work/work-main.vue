@@ -17,7 +17,7 @@
 <script>
   import StandardTitle from '../standard/title.vue'
   import StandardSubTitle from '../standard/sub-title.vue'
-  import FirstProjects from './first-projects/main.vue'
+  import FirstProjects from './first-projects/main-projects.vue'
 
   export default {
     components: {

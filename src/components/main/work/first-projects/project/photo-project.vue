@@ -2,7 +2,7 @@
   <div class="container-photo">
     <span class="blur-photo"></span>
     <img
-      src="../../../../../assets/work/first-projects/countdown-timer.png"
+      :src="urlProject"
       alt="Previsualización del proyecto"
       class="photo"
     >
@@ -13,6 +13,9 @@
 
   export default {
     created() {
+    },
+    props: {
+      urlProject: String
     },
     components: {
     },
@@ -27,9 +30,9 @@
   .container-projects {}
 
   .container-photo {
+    grid-column: 1/3;
     position: relative;
-    width: 710px;
-    height: 444px;
+    height: 362px;
   }
 
   .blur-photo {
@@ -38,9 +41,7 @@
     height: 100%;
     background-color: rgb(255, 255, 255, 0.15);
   }
-  .blur-photo:hover {
-    background-color: transparent;
-  }
+  .blur-photo:hover { background-color: transparent; }
 
   .photo {
     width: 100%;

@@ -1,49 +1,42 @@
-const technologies = [
+const firstProjects = [
   {
-    title: "HTML 5",
-    urlIcon: "fa-brands fa-html5",
+    name: "Countdown Timer",
+    paragraph: `
+      A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
+      and more. Available on <span>Visual Studio Marketplace</span>,
+      <span>Package Control</span>, <span>Atom Package Manager</span>,
+      and <span>npm</span>.
+    `,
+    technologies: [
+      "Vs Code",
+      "Sublime Text",
+      "Atom",
+      "iTerm2",
+      "Hyper"
+    ],
+    urlImage: "src/assets/work/first-projects/countdown-timer.png",
+    urlGithub: "https://www.youtube.com/",
+    urlApp: "https://www.google.com/",
+    informationPosition: "right"
   },
   {
-    title: "CSS 3",
-    urlIcon: "fa-brands fa-css3-alt",
-  },
-  {
-    title: "JavaScript",
-    urlIcon: "fa-brands fa-js",
-  },
-  {
-    title: "ReactJs",
-    urlIcon: "fa-brands fa-react",
-  },
-  {
-    title: "VueJs",
-    urlIcon: "fa-brands fa-vuejs",
-  },
-  {
-    title: "Figma",
-    urlIcon: "fa-brands fa-figma",
-  },
-  {
-    title: "Git/Github",
-    urlIcon: "fa-brands fa-github",
-  },
-  {
-    title: "Bash",
-    urlIcon: "fa-solid fa-code",
-  },
-  {
-    title: "Linux",
-    urlIcon: "fa-brands fa-linux",
-  },
-  {
-    title: "Java",
-    urlIcon: "fa-brands fa-java",
-  },
-  {
-    title: "Python",
-    urlIcon: "fa-brands fa-python",
+    name: "Halcyon Theme",
+    paragraph: `
+      A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
+      and more. Available on <span>Visual Studio Marketplace</span>,
+      <span>Package Control</span>, <span>Atom Package Manager</span>,
+      and <span>npm</span>.
+    `,
+    technologies: [
+      "Vs Code",
+      "Sublime Text",
+      "Atom",
+      "iTerm2",
+      "Hyper"
+    ],
+    urlImage: "src/assets/work/first-projects/countdown-timer.png",
+    informationPosition: "right"
   }
-
 ]
 
-export { technologies }
+export { firstProjects }
