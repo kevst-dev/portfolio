@@ -1,5 +1,8 @@
 <template>
-  <div class="container-photo">
+  <div 
+    class="container-photo" 
+    :class="{container_photo__invert: isLeftPosition(informationPosition)}"
+  >
     <span class="blur-photo"></span>
     <img
       :src="urlProject"
@@ -15,12 +18,18 @@
     created() {
     },
     props: {
-      urlProject: String
+      urlProject: String,
+      informationPosition: String
     },
     components: {
     },
     setup() {
+      const isLeftPosition = (informationPosition) => {
+        return (informationPosition === "left")
+      }
+
       return {
+        isLeftPosition
       }
     }
   }
@@ -33,6 +42,9 @@
     grid-column: 1/3;
     position: relative;
     height: 362px;
+  }
+  .container_photo__invert {
+    grid-column: 3/5;
   }
 
   .blur-photo {

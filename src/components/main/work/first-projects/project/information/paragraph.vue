@@ -1,6 +1,13 @@
 <template>
-  <div class="first-project__container-paragraph">
-    <p class="first-project__paragraph" v-html="paragraph"></p>
+  <div
+    class="first-project__container-paragraph"
+    :class="{first__container_invert: isLeftPosition}"
+  >
+    <p
+      class="first-project__paragraph"
+      :class="{first_project__paragraph: isLeftPosition}"
+      v-html="paragraph"
+    ></p>
   </div>
 </template>
 
@@ -8,7 +15,8 @@
 
   export default {
     props: {
-      paragraph: String
+      paragraph: String,
+      isLeftPosition: Boolean
     },
     components: {
     },
@@ -28,11 +36,20 @@
     font-size: var(--font-size-body-text);
   }
 
+  .first__container_invert {
+    margin-left: 0;
+    margin-right: -15%;
+  }
+
   .first-project__paragraph {
     font-size: var(--font-size-body-text);
     text-align: right;
     color: var(--color-texto-1);
   }
+  .first_project__paragraph {
+    text-align: left;
+  }
+
   .first-project__paragraph span {
     font-weight: 700;
     color: var(--color-primario);

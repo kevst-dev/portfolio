@@ -1,7 +1,8 @@
 <template>
-  <div class="container-project">
+  <div class="container-project ">
     <PhotoProject
       :urlProject="contentProject.urlImage"
+      :informationPosition="contentProject.informationPosition"
     />
     <InformationProject
       :contentProject="contentProject"

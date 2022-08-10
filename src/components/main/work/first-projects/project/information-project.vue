@@ -1,10 +1,22 @@
 <template>
-  <div class="container-information">
-    <TitleProject :name="contentProject.name"/>
+  <div
+    class="container-information"
+    :class="{container_information__invert: isLeftPosition(contentProject)}"
+  >
+    <TitleProject
+      :name="contentProject.name"
+      :isLeftPosition="isLeftPosition(contentProject)"
+    />
 
-    <ParagraphProject :paragraph="contentProject.paragraph"/>
+    <ParagraphProject
+      :paragraph="contentProject.paragraph"
+      :isLeftPosition="isLeftPosition(contentProject)"
+    />
 
-    <Technologies :nameTechnologies="contentProject.technologies" />
+    <Technologies
+      :nameTechnologies="contentProject.technologies"
+      :isLeftPosition="isLeftPosition(contentProject)"
+    />
 
     <LinksProject
       :urlGithub="contentProject.urlGithub"
@@ -32,14 +44,19 @@
       LinksProject
     },
     setup() {
+      const isLeftPosition = (contentProject) => {
+        return (contentProject.informationPosition === "left")
+      }
+
       return {
+        isLeftPosition
       }
     }
   }
 </script>
 
 <style scoped>
-  .container-information{
+  .container-information {
     position: relative;
     grid-column: 3/5;
     display: flex;
@@ -48,7 +65,11 @@
     align-items: flex-end;
     gap: 25px;
   }
-
+  .container_information__invert {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    align-items: flex-start;
+  }
   /* Mobile */
   @media screen and (max-width: 420px){
     .photo { }

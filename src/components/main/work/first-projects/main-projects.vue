@@ -3,6 +3,9 @@
     <Project
       :contentProject="firstProjects[0]"
     />
+    <Project
+      :contentProject="firstProjects[1]"
+    />
   </div>
 </template>
 
@@ -25,4 +28,7 @@
 </script>
 
 <style scoped>
+  .container-projects {
+    z-index: var(--z-back);
+  }
 </style>

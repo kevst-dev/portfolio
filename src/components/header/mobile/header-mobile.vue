@@ -40,6 +40,7 @@ export default {
 <style>
   .header-main {
     width: 100vw;
+    z-index: var(--z-fixed);
     position: fixed;
     top: 0;
     left: 0;

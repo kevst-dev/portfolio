@@ -1,5 +1,5 @@
 <template>
-  <div class="container-technologies">
+  <div class="container" :class="{conatiner__invert: isLeftPosition}">
     <p v-for="technology in nameTechnologies"
       class="technology">
       {{technology}}
@@ -11,7 +11,8 @@
 
   export default {
     props: {
-      nameTechnologies: []
+      nameTechnologies: [],
+      isLeftPosition: Boolean
     },
     components: {
     },
@@ -23,10 +24,15 @@
 </script>
 
 <style scoped>
-  .container-technologies {
+  .container {
     margin-left: -15%;
     display: flex;
     gap: 15px;
+  }
+
+  .conatiner__invert {
+    margin-left: 0;
+    margin-right: -15%;
   }
 
   .technology {

@@ -1,5 +1,8 @@
 <template>
-  <div class="container-title">
+  <div
+    class="container"
+    :class="{container__invert: isLeftPosition}"
+  >
     <p class="status">Proyecto destacado</p>
     <h4 class="title">{{name}}</h4>
   </div>
@@ -9,11 +12,13 @@
 
   export default {
     props: {
-      name: String
+      name: String,
+      isLeftPosition: Boolean
     },
     components: {
     },
     setup() {
+
       return {
       }
     }
@@ -21,12 +26,15 @@
 </script>
 
 <style scoped>
-  .container-title {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 5px;
   }
+
+  .container__invert { align-items: flex-start; }
+
   .status {
     font-size: var(--font-size-body-text);
     color: var(--color-primario);
