@@ -1,8 +1,7 @@
 <template>
   <div class="container-project ">
     <PhotoProject
-      :urlProject="contentProject.urlImage"
-      :informationPosition="contentProject.informationPosition"
+      :contentProject="contentProject"
     />
     <InformationProject
       :contentProject="contentProject"
@@ -36,5 +35,18 @@
     max-width: 1300px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Tablet */
+  @media screen and (max-width: 768px){
+    .container-project {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      display: inline-block;
+    }
+  }
+  /* Mobile */
+  @media screen and (max-width: 420px){
   }
 </style>

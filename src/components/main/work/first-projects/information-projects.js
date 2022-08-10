@@ -7,6 +7,7 @@ const firstProjects = [
       y hacer que se vea lo más cercano al <span>diseño original</span>.
     `,
     technologies: [
+      "NeoVim",
       "HTML",
       "CSS",
       "JavaScript",
@@ -15,27 +16,26 @@ const firstProjects = [
     ],
     urlImage: "src/assets/work/first-projects/countdown-timer.png",
     urlGithub: "https://github.com/kevst-dev/countdown-timer-Frontent-mentor",
-    urlApp: "https://kevst-dev.github.io/countdown-timer-Frontent-mentor/",
+    urlApp: "https://kevst-dev.github.io/countdown-timer-Frontent-mentor",
     informationPosition: "right"
   },
   {
-    name: "Halcyon Theme",
+    name: "Interactive rating component",
     paragraph: `
-      A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
-      and more. Available on <span>Visual Studio Marketplace</span>,
-      <span>Package Control</span>, <span>Atom Package Manager</span>,
-      and <span>npm</span>.
+      Es un reto de <span>Frontend Mentor</span>, el cual consiste
+      en construir un componente de <span>calificacion interactivo</span>
+      y lograr que se parezca lo más posible al <span>diseño original</span>.
     `,
     technologies: [
-      "Vs Code",
-      "Sublime Text",
-      "Atom",
-      "iTerm2",
-      "Hyper"
+      "NeoVim",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Mobile First"
     ],
-    urlImage: "src/assets/work/first-projects/countdown-timer.png",
-    urlGithub: "https://github.com/kevst-dev/countdown-timer-Frontent-mentor",
-    urlApp: "https://kevst-dev.github.io/countdown-timer-Frontent-mentor/",
+    urlImage: "src/assets/work/first-projects/interactive-rating.jpg",
+    urlGithub: "https://github.com/kevst-dev/interactive-rating-frontend-mentor",
+    urlApp: "https://kevst-dev.github.io/interactive-rating-frontend-mentor",
     informationPosition: "left"
   }
 ]

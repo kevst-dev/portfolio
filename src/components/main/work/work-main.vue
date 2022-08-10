@@ -5,7 +5,7 @@
     <div class="information">
 
       <div class="first-projects">
-        <StandardSubTitle nameTitle="Principales proyectos"/>
+        <StandardSubTitle class="first-project-title" nameTitle="Principales proyectos"/>
         <FirstProjects/>
       </div>
 
@@ -52,6 +52,17 @@
     gap: 30px;
   }
 
+  .first-projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .first-project-title {
+    width: 100%;
+  }
   /* Tablet */
   @media screen and (max-width: 768px){
     .information {

@@ -27,7 +27,8 @@
   .container {
     margin-left: -15%;
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 5px 15px;
   }
 
   .conatiner__invert {
@@ -38,5 +39,12 @@
   .technology {
     font-size: var(--font-size-small);
     color: var(--color-texto-1);
+  }
+
+  /* Tablet */
+  @media screen and (max-width: 768px){
+    .container {
+      margin: 0;
+    }
   }
 </style>

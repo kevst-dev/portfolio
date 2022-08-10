@@ -1,15 +1,16 @@
 <template>
-  <div 
-    class="container-photo" 
-    :class="{container_photo__invert: isLeftPosition(informationPosition)}"
+  <a
+    class="container-photo"
+    :class="{container_photo__invert: isLeftPosition(contentProject)}"
+    :href="contentProject.urlGithub" target="_blank"
   >
     <span class="blur-photo"></span>
     <img
-      :src="urlProject"
+      :src="contentProject.urlImage"
       alt="Previsualización del proyecto"
       class="photo"
     >
-  </div>
+  </a>
 </template>
 
 <script>
@@ -18,14 +19,13 @@
     created() {
     },
     props: {
-      urlProject: String,
-      informationPosition: String
+      contentProject: {},
     },
     components: {
     },
     setup() {
-      const isLeftPosition = (informationPosition) => {
-        return (informationPosition === "left")
+      const isLeftPosition = (contentProject) => {
+        return (contentProject.informationPosition === "left")
       }
 
       return {
@@ -36,12 +36,11 @@
 </script>
 
 <style scoped>
-  .container-projects {}
-
   .container-photo {
     grid-column: 1/3;
     position: relative;
     height: 362px;
+    cursor: pointer;
   }
   .container_photo__invert {
     grid-column: 3/5;
@@ -59,6 +58,16 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  /* Tablet */
+  @media screen and (max-width: 768px){
+    .container-photo {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
   /* Mobile */
   @media screen and (max-width: 420px){

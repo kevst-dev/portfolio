@@ -1,10 +1,7 @@
 <template>
   <div class="container-projects">
-    <Project
-      :contentProject="firstProjects[0]"
-    />
-    <Project
-      :contentProject="firstProjects[1]"
+    <Project v-for="project in firstProjects"
+      :contentProject="project"
     />
   </div>
 </template>
@@ -29,6 +26,9 @@
 
 <style scoped>
   .container-projects {
-    z-index: var(--z-back);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
   }
 </style>

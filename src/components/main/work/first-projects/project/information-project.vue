@@ -65,13 +65,32 @@
     align-items: flex-end;
     gap: 25px;
   }
+
   .container_information__invert {
     grid-column: 1/3;
     grid-row: 1/2;
     align-items: flex-start;
   }
+
+  /* Tablet */
+  @media screen and (max-width: 768px){
+    .container-information {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(61, 66, 82, 0.85);
+      position: absolute;
+      top: 0;
+      left: 0;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 30px;
+    }
+  }
+
   /* Mobile */
   @media screen and (max-width: 420px){
-    .photo { }
+    .container-information {
+      padding: 20px;
+    }
   }
 </style>

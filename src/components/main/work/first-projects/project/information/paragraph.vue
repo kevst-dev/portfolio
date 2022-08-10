@@ -54,4 +54,17 @@
     font-weight: 700;
     color: var(--color-primario);
   }
+
+  /* Tablet */
+  @media screen and (max-width: 768px){
+    .first-project__container-paragraph {
+      margin-left: 0;
+      padding: 0;
+      width: 100%;
+      background-color: transparent;
+    }
+    .first-project__paragraph {
+      text-align: left;
+    }
+  }
 </style>

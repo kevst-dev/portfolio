@@ -46,4 +46,11 @@
     font-weight: 600;
     color: var(--color-primario);
   }
+
+  /* Tablet */
+  @media screen and (max-width: 768px){
+    .container {
+      align-items: flex-start;
+    }
+  }
 </style>
