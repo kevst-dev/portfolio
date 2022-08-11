@@ -84,6 +84,7 @@
       justify-content: flex-start;
       align-items: flex-start;
       padding: 30px;
+      border-radius: 10px;
     }
   }
 

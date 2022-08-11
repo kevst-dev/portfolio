@@ -3,14 +3,19 @@
     <StandardTitle nameTitle="Portafolio"/>
 
     <div class="information">
-
       <div class="first-projects">
-        <StandardSubTitle class="first-project-title" nameTitle="Principales proyectos"/>
+        <StandardSubTitle class="first-project-title"
+          nameTitle="Principales proyectos"/>
         <FirstProjects/>
       </div>
 
-      <Skills/>
+      <div class="other-projects">
+        <StandardSubTitle class="other-project-title"
+          nameTitle="Otros proyectos realizados"/>
+        <OtherProjects/>
+      </div>
     </div>
+
   </section>
 </template>
 
@@ -18,12 +23,14 @@
   import StandardTitle from '../standard/title.vue'
   import StandardSubTitle from '../standard/sub-title.vue'
   import FirstProjects from './first-projects/main-projects.vue'
+  import OtherProjects from './other-projects/main-projects.vue'
 
   export default {
     components: {
       StandardTitle,
       StandardSubTitle,
-      FirstProjects
+      FirstProjects,
+      OtherProjects
     },
     setup() {
       return {
@@ -63,6 +70,11 @@
   .first-project-title {
     width: 100%;
   }
+
+  .other-project-title {
+    margin-bottom: 60px;
+  }
+
   /* Tablet */
   @media screen and (max-width: 768px){
     .information {

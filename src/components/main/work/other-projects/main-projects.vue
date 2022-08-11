@@ -26,23 +26,22 @@
 
 <style scoped>
   .container-projects {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 95px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    grid-auto-rows: 380px;
   }
   /* Tablet */
   @media screen and (max-width: 768px){
     .container-projects {
-      gap: 60px;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   /* Mobile */
   @media screen and (max-width: 420px){
     .container-projects {
-      gap: 35px;
+      grid-template-columns: 1fr;
     }
   }
 </style>
