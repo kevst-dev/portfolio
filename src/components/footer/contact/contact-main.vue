@@ -23,11 +23,12 @@
 
 <style scoped>
   .container-contact{
+    width: 100%;
     margin: 60px 0;
     padding: 60px 0;
-    width: 100%;
     background-color: var(--color-complemento);
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 60px;
   }
