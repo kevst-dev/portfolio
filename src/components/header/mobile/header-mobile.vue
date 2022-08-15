@@ -27,7 +27,10 @@ export default {
   setup() {
     const isShowNav= ref(false)
 
-    const toggleNav = () => { isShowNav.value = !isShowNav.value }
+    const toggleNav = () => {
+      console.log("aqui")
+      isShowNav.value = !isShowNav.value
+    }
 
     return {
       isShowNav,

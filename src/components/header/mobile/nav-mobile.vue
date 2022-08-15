@@ -14,10 +14,11 @@
 
 <script>
 import { reactive } from 'vue'
+import { defineComponent } from "vue";
 import NavItem from '../nav-item.vue'
 import { featuresNavItems } from '../features-nav-items.js'
 
-export default {
+export default defineComponent({
   components: {
     NavItem
   },
@@ -25,13 +26,13 @@ export default {
     isShowNav: Boolean
   },
   emits: ['toggle-nav'],
-  setup(context) {
+  setup(props, context) {
     const dataNav = reactive(featuresNavItems)
 
     const selectActiveItem = (selectItem) => {
       dataNav.forEach(item => { item.isActive = false });
       selectItem.isActive = !selectItem.isActive
-      context.emit('toggle-nav')
+      context.emit("toggle-nav")
     }
 
     return {
@@ -39,7 +40,7 @@ export default {
       selectActiveItem
     }
   }
-}
+})
 </script>
 
 <style scoped>
