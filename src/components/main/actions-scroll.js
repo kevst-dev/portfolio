@@ -31,7 +31,8 @@ const enableLinkItem = (nameItem) => {
   disableLinksItems(linksItems)
 
   linksItems.map((linkItem) => {
-    const nameLinkItem = linkItem.href.split("/")[3].split("#")[1]
+    const nameLinkItem = linkItem.href.split("/")[4].split("#")[1]
+
     if (nameItem === nameLinkItem) {
       linkItem.classList.add('link__active')
     }
@@ -45,16 +46,6 @@ const disableLinksItems = (linksItems) => {
 }
 
 const getLinksItems = () => {
-  const firstItem = 1
-  const lastItem = 5
-
-  const navItems = document
-                    .getElementsByClassName("nav-header__menu")[0]
-                    .childNodes
-  let linksItems = []
-
-  for (let i=firstItem; i<=lastItem; i++) {
-    linksItems.push(navItems[i].childNodes[0])
-  }
-  return linksItems
+  const linkItems = document.getElementsByClassName("nav__link")
+  return [...linkItems]
 }
