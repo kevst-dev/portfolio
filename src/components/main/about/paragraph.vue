@@ -16,20 +16,10 @@
   </div>
 </template>
 
-<script>
-
-  export default {
-    components: {
-    },
-    setup() {
-      return {
-      }
-    }
-  }
+<script setup>
 </script>
 
 <style scoped>
-
   .paragraph {
     display: flex;
     gap: 15px;

@@ -20,27 +20,12 @@
   </section>
 </template>
 
-<script>
+<script setup>
   import StandardTitle from '../standard/title.vue'
   import ProfilePhoto from './profile-photo.vue'
   import StandardSubTitle from '../standard/sub-title.vue'
   import Paragraph from './paragraph.vue'
   import StandardButton from '../standard/button.vue'
-
-  export default {
-    components: {
-      StandardTitle,
-      ProfilePhoto,
-      StandardSubTitle,
-      Paragraph,
-      StandardButton
-    },
-    setup() {
-
-      return {
-      }
-    }
-  }
 </script>
 
 <style scoped>
