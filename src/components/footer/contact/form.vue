@@ -25,15 +25,7 @@
   </form>
 </template>
 
-<script>
-  export default {
-    components: {
-    },
-    setup() {
-      return {
-      }
-    }
-  }
+<script setup>
 </script>
 
 <style scoped>

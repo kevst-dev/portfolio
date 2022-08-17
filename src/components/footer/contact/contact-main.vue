@@ -5,20 +5,9 @@
   </section>
 </template>
 
-<script>
+<script setup>
   import TitleStandard from '../../main/standard/title.vue'
   import FormContact from './form.vue'
-
-  export default {
-    components: {
-      TitleStandard,
-      FormContact
-    },
-    setup() {
-      return {
-      }
-    }
-  }
 </script>
 
 <style scoped>

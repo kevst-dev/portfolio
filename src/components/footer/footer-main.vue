@@ -22,22 +22,10 @@
   </footer>
 </template>
 
-<script>
+<script setup>
   import Contact from './contact/contact-main.vue'
   import SubTitle from '../main/standard/sub-title.vue'
   import SocialLink from './social-link.vue'
-
-  export default {
-    components: {
-    Contact,
-    SubTitle,
-    SocialLink
-},
-    setup() {
-      return {
-      }
-    }
-  }
 </script>
 
 <style scoped>

@@ -4,19 +4,11 @@
   </a>
 </template>
 
-<script scoped>
-  export default {
-    props: {
-      nameIcon: String,
-      url: String
-    },
-    components: {
-    },
-    setup() {
-      return {
-      }
-    }
-  }
+<script setup>
+  const props = defineProps({
+    nameIcon: String,
+    url: String
+  })
 </script>
 
 <style scoped>
