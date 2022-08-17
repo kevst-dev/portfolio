@@ -10,18 +10,10 @@
   </div>
 </template>
 
-<script>
-  export default {
-    props: {
-      technologie: {}
-    },
-    components: {
-    },
-    setup() {
-      return {
-      }
-    }
-  }
+<script setup>
+  const props = defineProps({
+    technologie: {}
+  })
 </script>
 
 <style scoped>

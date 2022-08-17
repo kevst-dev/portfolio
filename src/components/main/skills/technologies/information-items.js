@@ -43,7 +43,6 @@ const technologies = [
     title: "Python",
     urlIcon: "fa-brands fa-python",
   }
-
 ]
 
 export { technologies }

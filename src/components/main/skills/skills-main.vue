@@ -14,24 +14,11 @@
   </section>
 </template>
 
-<script>
+<script setup>
   import StandardTitle from '../standard/title.vue'
   import StandardSubTitle from '../standard/sub-title.vue'
   import Paragraph from './paragraph.vue'
   import Skills from './technologies/container.vue'
-
-  export default {
-    components: {
-      StandardTitle,
-      StandardSubTitle,
-      Paragraph,
-      Skills
-    },
-    setup() {
-      return {
-      }
-    }
-  }
 </script>
 
 <style scoped>

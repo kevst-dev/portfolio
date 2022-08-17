@@ -1,6 +1,5 @@
 <template>
   <div class="items-container">
-
     <TechnologiesItem
       v-for="technologie in technologies"
       :technologie="technologie"
@@ -8,23 +7,13 @@
   </div>
 </template>
 
-<script>
+<script setup>
+  import { onMounted } from 'vue'
+
   import TechnologiesItem from './item.vue'
   import  { technologies } from './information-items.js'
 
-  export default {
-    created() {
-      console.log("Aquii", technologies)
-    },
-    components: {
-      TechnologiesItem
-    },
-    setup() {
-      return {
-        technologies,
-      }
-    }
-  }
+  onMounted(() => {})
 </script>
 
 <style scoped>
