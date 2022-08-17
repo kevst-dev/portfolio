@@ -12,35 +12,25 @@
   </nav>
 </template>
 
-<script>
-import { reactive } from 'vue'
-import { defineComponent } from "vue";
-import NavItem from '../nav-item.vue'
-import { featuresNavItems } from '../features-nav-items.js'
+<script setup>
+  import { reactive } from 'vue'
 
-export default defineComponent({
-  components: {
-    NavItem
-  },
-  props: {
+  import NavItem from '../nav-item.vue'
+
+  import { featuresNavItems } from '../features-nav-items.js'
+  const dataNav = reactive(featuresNavItems)
+
+  const props = defineProps({
     isShowNav: Boolean
-  },
-  emits: ['toggle-nav'],
-  setup(props, context) {
-    const dataNav = reactive(featuresNavItems)
+  })
 
-    const selectActiveItem = (selectItem) => {
-      dataNav.forEach(item => { item.isActive = false });
-      selectItem.isActive = !selectItem.isActive
-      context.emit("toggle-nav")
-    }
+  const emit = defineEmits(['toggle-nav'])
 
-    return {
-      dataNav,
-      selectActiveItem
-    }
+  const selectActiveItem = (selectItem) => {
+    dataNav.forEach(item => { item.isActive = false });
+    selectItem.isActive = !selectItem.isActive
+    emit("toggle-nav")
   }
-})
 </script>
 
 <style scoped>

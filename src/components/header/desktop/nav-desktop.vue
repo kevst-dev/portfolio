@@ -9,30 +9,17 @@
   </nav>
 </template >
 
-<script>
-import { reactive } from 'vue'
-import NavItem from '../nav-item.vue'
-import { featuresNavItems } from '../features-nav-items.js'
+<script setup>
+  import { reactive } from 'vue'
+  import NavItem from '../nav-item.vue'
+  import { featuresNavItems } from '../features-nav-items.js'
 
-const dataNav = reactive(featuresNavItems)
+  const dataNav = reactive(featuresNavItems)
 
-export default {
-  components: {
-    NavItem
-  },
-  setup() {
-
-    const selectActiveItem = (selectItem) => {
-      dataNav.forEach(item => { item.isActive = false });
-      selectItem.isActive = !selectItem.isActive
-    }
-
-    return {
-      dataNav,
-      selectActiveItem
-    }
+  const selectActiveItem = (selectItem) => {
+    dataNav.forEach(item => { item.isActive = false });
+    selectItem.isActive = !selectItem.isActive
   }
-}
 </script>
 
 <style scoped>

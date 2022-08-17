@@ -10,12 +10,10 @@
   </li>
 </template>
 
-<script>
-  export default {
-    props: {
-      dataItem: {}
-    }
-  }
+<script setup>
+  const props = defineProps({
+    dataItem: {}
+  })
 </script>
 
 <style scoped>

@@ -14,30 +14,18 @@
   </header>
 </template>
 
-<script>
+<script setup>
   import { ref } from 'vue'
   import LogoKevst from '../logo-kevst.vue'
   import NavMobile from './nav-mobile.vue'
 
-export default {
-  components: {
-    LogoKevst,
-    NavMobile
-  },
-  setup() {
-    const isShowNav= ref(false)
+  const isShowNav= ref(false)
 
-    const toggleNav = () => {
-      console.log("aqui")
-      isShowNav.value = !isShowNav.value
-    }
-
-    return {
-      isShowNav,
-      toggleNav
-    }
+  const toggleNav = () => {
+    console.log("aqui")
+    isShowNav.value = !isShowNav.value
   }
-}
+
 </script>
 
 <style>
