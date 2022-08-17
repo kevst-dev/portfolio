@@ -5,25 +5,20 @@
   </a>
 </template>
 
-<script>
+<script setup>
 
-  export default {
-    props: {
-      name: String,
-      styleButton: {
-        type: String,
-        default: "button-normal"
-      },
-      urlIcon: {
-        type: String,
-        default: null
-      },
+  const props = defineProps({
+    name: String,
+    styleButton: {
+      type: String,
+      default: "button-normal"
     },
-    components: {
-    },
-    setup() {
+    urlIcon: {
+      type: String,
+      default: null
     }
-  }
+  })
+
 </script>
 
 <style scoped>
@@ -99,6 +94,4 @@
       font-size: var(--font-size-min);
     }
   }
-
-
 </style>

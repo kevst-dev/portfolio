@@ -2,17 +2,10 @@
   <h3 class="sub-title">{{nameTitle}}</h3>
 </template>
 
-<script>
-
-  export default {
-    props: {
-      nameTitle: "",
-    },
-    components: {
-    },
-    setup() {
-    }
-  }
+<script setup>
+  const props = defineProps({
+    nameTitle: String,
+  })
 </script>
 
 <style scoped>

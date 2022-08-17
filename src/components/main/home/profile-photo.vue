@@ -8,18 +8,9 @@
   </figure>
 </template>
 
-<script>
+<script setup>
   const urlAssets = "src/assets/home"
 
-  export default {
-    components: {
-    },
-    setup() {
-      return {
-        urlAssets
-      }
-    }
-  }
 </script>
 
 <style scoped>

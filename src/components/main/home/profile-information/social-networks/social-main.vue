@@ -19,19 +19,8 @@
   </div>
 </template>
 
-<script>
+<script setup>
   import SocialLink from './social-link.vue'
-
-  export default {
-    components: {
-      SocialLink
-    },
-    setup() {
-
-      return {
-      }
-    }
-  }
 </script>
 
 <style scoped>

@@ -30,25 +30,12 @@
   </div>
 </template>
 
-<script>
+<script setup>
   import Title from './title.vue'
   import SocialNetworks from './social-networks/social-main.vue'
   import Button from '../../standard/button.vue'
 
-  export default {
-    components: {
-      Title,
-      SocialNetworks,
-      Button
-    },
-    setup() {
-      const isMobile = () => { return (screen.width <= 420) }
-
-      return {
-        isMobile
-      }
-    }
-  }
+  const isMobile = () => { return (screen.width <= 420) }
 </script>
 
 <style scoped>
@@ -103,5 +90,4 @@
       gap: 0;
     }
   }
-
 </style>

@@ -4,20 +4,15 @@
   </a>
 </template>
 
-<script>
-  export default {
-    props: {
-      nameIcon: String,
-      url: String
-    },
-    components: {
-    },
-    setup() {
+<script setup>
+  import { onMounted } from 'vue'
 
-      return {
-      }
-    }
-  }
+  const props = defineProps({
+    nameIcon: String,
+    url: String
+  })
+
+  onMounted(() => {})
 </script>
 
 <style scoped>

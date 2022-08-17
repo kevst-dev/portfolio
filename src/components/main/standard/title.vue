@@ -5,17 +5,10 @@
   </div>
 </template>
 
-<script>
-
-  export default {
-    props: {
-      nameTitle: "",
-    },
-    components: {
-    },
-    setup() {
-    }
-  }
+<script setup>
+  const props = defineProps({
+    nameTitle: String
+  })
 </script>
 
 <style scoped>

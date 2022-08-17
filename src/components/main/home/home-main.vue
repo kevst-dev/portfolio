@@ -5,21 +5,9 @@
   </section>
 </template>
 
-<script>
+<script setup>
   import ProfilePhoto from './profile-photo.vue'
   import ProfileData from './profile-information/profile-main.vue'
-
-  export default {
-    components: {
-      ProfilePhoto,
-      ProfileData
-    },
-    setup() {
-
-      return {
-      }
-    }
-  }
 </script>
 
 <style scoped>
