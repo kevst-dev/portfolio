@@ -6,22 +6,9 @@
   </div>
 </template>
 
-<script>
+<script setup>
   import Project from './project/main-project.vue'
   import { firstProjects } from './information-projects.js'
-
-  export default {
-    created() {
-    },
-    components: {
-      Project,
-    },
-    setup() {
-      return {
-        firstProjects
-      }
-    }
-  }
 </script>
 
 <style scoped>

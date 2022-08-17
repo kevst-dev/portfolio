@@ -7,20 +7,11 @@
   </div>
 </template>
 
-<script>
-
-  export default {
-    props: {
-      nameTechnologies: [],
-      isLeftPosition: Boolean
-    },
-    components: {
-    },
-    setup() {
-      return {
-      }
-    }
-  }
+<script setup>
+  const props = defineProps({
+    nameTechnologies: Array,
+    isLeftPosition: Boolean
+  })
 </script>
 
 <style scoped>

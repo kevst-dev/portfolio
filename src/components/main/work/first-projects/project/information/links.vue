@@ -11,26 +11,17 @@
   </div>
 </template>
 
-<script>
-
-  export default {
-    props: {
-      urlGithub: {
-        type: String,
-        default: null
-      },
-      urlApp: {
-        type: String,
-        default: null
-      },
+<script setup>
+  const props = defineProps({
+    urlGithub: {
+      type: String,
+      default: null
     },
-    components: {
-    },
-    setup() {
-      return {
-      }
+    urlApp: {
+      type: String,
+      default: null
     }
-  }
+  })
 </script>
 
 <style scoped>

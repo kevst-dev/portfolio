@@ -2,8 +2,8 @@ const firstProjects = [
   {
     name: "QR code component",
     paragraph: `
-      Es un reto de Frontend Mentor, el cual consiste en construir un
-      componente QR y hacer que se vea lo más cercano al 
+      Es un reto de Frontend Mentor, el cual consiste en construir un
+      componente QR y hacer que se vea lo más cercano al
       diseño original.
     `,
     technologies: [

@@ -6,23 +6,13 @@
   </div>
 </template>
 
-<script>
+<script setup>
   import Links from './links.vue'
 
-  export default {
-    props: {
-      urlGithub: String,
-      urlApp: Boolean
-    },
-    components: {
-      Links
-    },
-    setup() {
-
-      return {
-      }
-    }
-  }
+  const props = defineProps({
+    urlGithub: String,
+    urlApp:String
+  })
 </script>
 
 <style scoped>

@@ -16,35 +16,18 @@
   </div>
 </template>
 
-<script>
+<script setup>
   import Header from './information/header.vue'
   import TitleProject from './information/title.vue'
   import ParagraphProject from './information/paragraph.vue'
   import Technologies from './information/technologies.vue'
-  import LinksProject from './information/links.vue'
 
-  export default {
-    created() {
-    },
-    props: {
-      contentProject: {}
-    },
-    components: {
-      Header,
-      TitleProject,
-      ParagraphProject,
-      Technologies,
-      LinksProject
-    },
-    setup() {
-      const isLeftPosition = (contentProject) => {
-        return (contentProject.informationPosition === "left")
-      }
+  const props = defineProps({
+    contentProject: {}
+  })
 
-      return {
-        isLeftPosition
-      }
-    }
+  const isLeftPosition = (contentProject) => {
+    return (contentProject.informationPosition === "left")
   }
 </script>
 

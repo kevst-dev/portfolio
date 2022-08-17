@@ -6,23 +6,12 @@
   </div>
 </template>
 
-<script>
+<script setup>
   import InformationProject from './information-project.vue'
 
-  export default {
-    created() {
-    },
-    props: {
-      contentProject: {},
-    },
-    components: {
-      InformationProject
-    },
-    setup() {
-      return {
-      }
-    }
-  }
+  const props = defineProps({
+    contentProject: {}
+  })
 </script>
 
 <style scoped>

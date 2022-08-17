@@ -4,20 +4,10 @@
   </p>
 </template>
 
-<script>
-
-  export default {
-    props: {
-      paragraph: String,
-      isLeftPosition: Boolean
-    },
-    components: {
-    },
-    setup() {
-      return {
-      }
-    }
-  }
+<script setup>
+  const props = defineProps({
+    paragraph: String
+  })
 </script>
 
 <style >

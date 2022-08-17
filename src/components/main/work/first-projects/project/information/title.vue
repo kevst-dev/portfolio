@@ -8,21 +8,11 @@
   </div>
 </template>
 
-<script>
-
-  export default {
-    props: {
-      name: String,
-      isLeftPosition: Boolean
-    },
-    components: {
-    },
-    setup() {
-
-      return {
-      }
-    }
-  }
+<script setup>
+  const props = defineProps({
+    name: String,
+    isLeftPosition: Boolean
+  })
 </script>
 
 <style scoped>

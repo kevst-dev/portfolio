@@ -9,25 +9,13 @@
   </div>
 </template>
 
-<script>
+<script setup>
   import PhotoProject from './photo-project.vue'
   import InformationProject from './information-project.vue'
 
-  export default {
-    created() {
-    },
-    props: {
-      contentProject: {},
-    },
-    components: {
-      PhotoProject,
-      InformationProject
-    },
-    setup() {
-      return {
-      }
-    }
-  }
+  const props = defineProps({
+    contentProject: {}
+  })
 </script>
 
 <style scoped>

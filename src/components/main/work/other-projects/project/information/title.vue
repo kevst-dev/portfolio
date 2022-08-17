@@ -2,20 +2,10 @@
   <h4 class="title">{{name}}</h4>
 </template>
 
-<script>
-
-  export default {
-    props: {
-      name: String,
-    },
-    components: {
-    },
-    setup() {
-
-      return {
-      }
-    }
-  }
+<script setup>
+  const props = defineProps({
+    name: String
+  })
 </script>
 
 <style scoped>

@@ -19,24 +19,11 @@
   </section>
 </template>
 
-<script>
+<script setup>
   import StandardTitle from '../standard/title.vue'
   import StandardSubTitle from '../standard/sub-title.vue'
   import FirstProjects from './first-projects/main-projects.vue'
   import OtherProjects from './other-projects/main-projects.vue'
-
-  export default {
-    components: {
-      StandardTitle,
-      StandardSubTitle,
-      FirstProjects,
-      OtherProjects
-    },
-    setup() {
-      return {
-      }
-    }
-  }
 </script>
 
 <style scoped>

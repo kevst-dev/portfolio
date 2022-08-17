@@ -13,25 +13,13 @@
   </a>
 </template>
 
-<script>
+<script setup>
+  const props = defineProps({
+    contentProject: {}
+  })
 
-  export default {
-    created() {
-    },
-    props: {
-      contentProject: {},
-    },
-    components: {
-    },
-    setup() {
-      const isLeftPosition = (contentProject) => {
-        return (contentProject.informationPosition === "left")
-      }
-
-      return {
-        isLeftPosition
-      }
-    }
+  const isLeftPosition = (contentProject) => {
+    return (contentProject.informationPosition === "left")
   }
 </script>
 
