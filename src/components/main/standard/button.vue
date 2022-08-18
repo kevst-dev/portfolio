@@ -1,5 +1,5 @@
 <template>
-  <a :class="styleButton" href="#">
+  <a :class="styleButton" :href="href">
     <font-awesome-icon v-if="urlIcon != null" :icon="urlIcon" size="lg" />
     {{name}}
   </a>
@@ -9,6 +9,10 @@
 
   const props = defineProps({
     name: String,
+    href: {
+      type: String,
+      default: "#"
+    },
     styleButton: {
       type: String,
       default: "button-normal"

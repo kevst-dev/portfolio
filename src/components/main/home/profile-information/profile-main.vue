@@ -12,18 +12,23 @@
     <div class="container-buttons">
       <Button
         name="Contáctame"
+        href="#contact"
         styleButton="button-normal"
         urlIcon="fa-regular fa-envelope"
       />
       <Button
         v-if="!isMobile()"
         name="Descargar CV"
+        download="CV-Kevin.pdf"
+        href="Hoja-de-vida.pdf"
         styleButton="button-outline"
         urlIcon="fa-regular fa-file-lines"
       />
       <Button
         v-else
         name="Descargar CV"
+        download="CV-Kevin.pdf"
+        href="Hoja-de-vida.pdf"
         styleButton="button-text"
       />
     </div>

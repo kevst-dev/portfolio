@@ -12,6 +12,7 @@
 
         <StandardButton
           name="Mi portafolio"
+          href="#work"
           styleButton="button-normal"
           urlIcon="fa-solid fa-cubes-stacked"
         />
