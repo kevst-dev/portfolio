@@ -6,7 +6,7 @@
   >
     <span class="blur-photo"></span>
     <img
-      :src="contentProject.urlImage"
+      :src="`${contentProject.urlImage}`"
       alt="Previsualización del proyecto"
       class="photo"
     >

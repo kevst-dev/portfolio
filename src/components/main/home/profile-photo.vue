@@ -1,7 +1,7 @@
 <template>
   <figure class="container-mask">
     <img
-      :src="urlAssets + '/foto-perfil.png'"
+      src="../../../assets/home/foto-perfil.webp"
       alt="Foto de perfil"
       class="mask-photo"
     >

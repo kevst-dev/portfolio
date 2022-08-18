@@ -14,7 +14,7 @@ const firstProjects = [
       "Font Awesome",
       "Desktop First"
     ],
-    urlImage: "src/assets/work/first-projects/countdown-timer.png",
+    urlImage: "work/first-projects/countdown-timer.png",
     urlGithub: "https://github.com/kevst-dev/countdown-timer-Frontent-mentor",
     urlApp: "https://kevst-dev.github.io/countdown-timer-Frontent-mentor",
     informationPosition: "right"
@@ -33,7 +33,7 @@ const firstProjects = [
       "JavaScript",
       "Mobile First"
     ],
-    urlImage: "src/assets/work/first-projects/interactive-rating.jpg",
+    urlImage: "work/first-projects/interactive-rating.jpg",
     urlGithub: "https://github.com/kevst-dev/interactive-rating-frontend-mentor",
     urlApp: "https://kevst-dev.github.io/interactive-rating-frontend-mentor",
     informationPosition: "left"
